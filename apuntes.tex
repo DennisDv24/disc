@@ -1,0 +1,111 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+	\theoremstyle{definition}
+	\newtheorem{definition}{Definición}[section]
+	\newtheorem{theorem}{Teorema}[section]
+	\newtheorem{obs}{Observación}[section]
+
+\usepackage{xcolor}
+\usepackage[margin=0.9in]{geometry}
+
+\spanishdecimal{.}
+
+\newcommand{\Mod}[1]{\ (\mathrm{m\acute od}\ #1)}
+
+\title{Apuntes Discretas}
+\author{Oskar Denis Siodmok}
+\begin{document}
+\maketitle
+\part{Aritmética modular}
+\section{Conceptos básicos}
+\begin{definition}
+\[a\equiv b \Mod{n} \iff a-b = \dot{n} \:\land\: a\bmod n = b\bmod n,\: n>1\]
+\end{definition}
+
+\begin{theorem}
+\[\forall a \in\mathbb{Z}\:\exists\:b\in\{0,1,\dots,n-1\}\subseteq\mathbb{Z}\:/\:a\equiv b\Mod{n},\:n\in\mathbb{N}\setminus\{1\}\]
+\end{theorem}
+
+\begin{definition}
+\[[a]_n = \{b\in\mathbb{Z}:a\equiv b\Mod{n}\}\]
+\end{definition}
+
+\begin{obs}
+Se cumple, debido a la propiedad transitiva: 
+\[a\equiv b\Mod{n}\iff[a]_n = [b]_n\]
+\end{obs}
+
+\begin{definition}
+	\[\mathbb{Z}_n=\{[0]_n,[1]_n,[2]_n,\dots,[n-1]_n\}\]
+\end{definition}
+
+\begin{obs}
+	\[[a]_n \longrightarrow a \equiv a+n \equiv a+2n \equiv \dots \Mod{n}\:\implies\]
+\[\text{Se puede aplicar la propiedad transitiva para transformar congruencias en otras equivalentes más sencillas}\]
+Por ejemplo:
+\[x\equiv17\Mod{11}\iff x\equiv 17-11\Mod{11} \iff x\equiv 17\bmod 11\Mod{11}\iff x\equiv 6\Mod{11}\]
+Siendo ésta última ecuación la solución para $x$.
+\end{obs}
+
+\begin{obs}
+	\[a+c\equiv b+d\Mod{n}
+	\Longleftarrow\left\{\begin{array}{c}
+		a\equiv b\Mod{n}\\ 
+		c\equiv d\Mod{n}
+	\end{array}\right\}\Longrightarrow
+	ac\equiv bd\Mod{n}\]
+Demostración:
+\[\left.\begin{array}{c}
+	a-b = kn\\
+	c-d = ln
+\end{array}\right\}a+c-b-d = kn+ln = n(k+l)\implies a+c\equiv b+d\Mod{n}
+\]
+\[\left.\begin{array}{c}
+	a-b = kn;\:ac-bc = kn\\
+	c-d = ln;\:cb-db = ln
+\end{array}\right\}ac+cb-bc-db = kn+ln= n(k+l) = ac-db \implies ac\equiv bd \Mod{n} \]
+\end{obs}
+\begin{definition}
+	Debido a estas observaciones, se define la suma y producto de clases módulo n como:
+\[
+\begin{array}{c}
+	[a]_n+[b]_n = [a+b]_n\\\relax
+	[a]_n [b]_n = [ab]_n
+\end{array}
+\]
+\end{definition}
+
+\section{Congruencias lineales}
+\begin{definition} Se define una congruencia lineal como:
+	\[ax+b\equiv c \Mod{n};\: a,b,c\in\mathbb{Z}\]
+\end{definition}
+\begin{theorem}
+	\[\text{mcd}(a,n) = 1 \iff \exists b\:/\:ab\equiv 1\Mod{n}\]
+	Se dice que $\exists\:[a]_n^{-1}$ para el producto en $\mathbb{Z}_n$
+\end{theorem}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
