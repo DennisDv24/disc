@@ -85,13 +85,35 @@ Demostración:
 \begin{definition} Se define una congruencia lineal como:
 	\[ax+b\equiv c \Mod{n};\: a,b,c\in\mathbb{Z}\]
 \end{definition}
+
 \begin{theorem}
-	\[\text{mcd}(a,n) = 1 \iff \exists b\:/\:ab\equiv 1\Mod{n}\]
+	\[\text{mcd}(a,n) = 1 \iff \exists\: b\:/\:ab\equiv 1\Mod{n}\]
 	Se dice que $\exists\:[a]_n^{-1}$ para el producto en $\mathbb{Z}_n$
 \end{theorem}
 
+\begin{definition}
+	\[\begin{array}{rl}
+		\phi:\mathbb{Z}^+\longrightarrow & \mathbb{Z}^+\\
+		n\longmapsto & \phi(n) = \#\{m\in\mathbb{N}:\text{mcd}(m,n)=1,\: m\leq n\}\\&
+		\phantom{\phi(n)}= \#\{m\in\mathbb{N}:m\text{ coprimo con }n,\:m\leq n\}
+	\end{array}\]
+\end{definition}
 
+\begin{theorem}
+	\[
+		\begin{array}{l}
+				\phi(p) = p-1\iff p\in\text{primos}\\
+				\phi(p^\alpha) = p^\alpha-p^{\alpha-1}\:\forall\:\alpha\in\mathbb{N}\iff p\in\text{primos}\\
+				\phi(mn)=\phi(m)\phi(n)\:\forall\:m,n\in\mathbb{Z}^+\iff\text{ mcd}(m,n)=1\\
+					n = p_1^{\alpha_1}p_2^{\alpha_2}\dots p_k^{\alpha_k},\:n\in\mathbb{Z}^+\implies \phi(n) = \prod_{i=1}^k(p_i^{\alpha_i}-p_i^{\alpha_i-1})		
+				\end{array}\]
+				Donde $p_i^{\alpha_i}$ hace referencia a la descomposición en primos de $n\in\mathbb{Z}^+$
+\end{theorem}
+\begin{theorem}[Euler-Fermat]
+	\[\text{mcd}(a,n)=1,\:a,n\in\mathbb{Z},\:n>1\longrightarrow a^{\phi(n)}\equiv 1\Mod{n}\longrightarrow [a]_n^{-1}=[a^{\phi(n)-1}]_n\]
+\end{theorem}
 
+\section{Sistemas de congruencias}
 
 
 
