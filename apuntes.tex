@@ -115,8 +115,32 @@ Demostración:
 
 \section{Sistemas de congruencias}
 
+\begin{theorem}[Teorema chino del resto]
+	\[
+		\begin{array}{l}
+	\forall\:n_1,n_2,\dots,n_k\in\mathbb{Z}^+\setminus\{1\}\\\forall\:a_1,a_2,\dots,a_k\in\mathbb{Z}\end{array}:\]
+	\[\exists\:x/\left\{\begin{array}{c}
+		x\equiv a_1\Mod{n_1}\\
+		x\equiv a_2\Mod{n_2}\\
+		\vdots\\
+		x\equiv a_k\Mod{n_k}
+	\end{array}\right\}
+	\Longleftarrow \text{mcd}(n_i, n_j)=1,\:\forall\:i,j\in\{1,\dots,k\}\subseteq\mathbb{N},\:i\neq j
+\]
+Además:
+\[x,x'\text{ son soluciones }\implies x\equiv x'\Mod{\prod_{i=1}^kn_i}\]
+\end{theorem}
 
-
+\begin{theorem}
+	\[\begin{array}{l}
+		\forall\:n_1, n_2\in\mathbb{Z}^+\setminus\{1\}\\
+		\forall\:a_1,a_2\in\mathbb{Z}
+		\end{array}:\:\exists x/\left\{\begin{array}{c}
+			x\equiv a_1\Mod{n_1}\\
+	x\equiv a_2\Mod{n_2}\end{array}
+\right\}\iff a_1\equiv a_2\Mod{\text{mcd}(n_1,n_2)}
+	\]
+\end{theorem}
 
 
 

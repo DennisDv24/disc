@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1603915028 "apuntes.tex" "apuntes.pdf" "apuntes" 1603915028
+["pdflatex"] 1603994734 "apuntes.tex" "apuntes.pdf" "apuntes" 1603994735
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1591545468 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1591545468 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1591545468 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -65,9 +65,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1602083943 4855604 a2b69e422d881628e3d9a5db2035053f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1602083905 2514049 bdcc6ccf323cb62b725a330b9c8611d1 ""
-  "apuntes.aux" 1603915028 562 b110107d0c3da7131413baff2feb9621 "pdflatex"
-  "apuntes.tex" 1603915026 3626 bad270ec7a95aaa969a8adc4370668ba ""
+  "apuntes.aux" 1603994735 562 b110107d0c3da7131413baff2feb9621 "pdflatex"
+  "apuntes.tex" 1603994733 4440 428dc7fc42cf4790baee52a9c4403954 ""
   (generated)
-  "apuntes.pdf"
-  "apuntes.log"
   "apuntes.aux"
+  "apuntes.log"
+  "apuntes.pdf"
