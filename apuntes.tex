@@ -143,6 +143,73 @@ Además:
 \end{theorem}
 
 
+\part{Combinatoria}
+\section{Conteo de conjuntos}
+\begin{obs} $|A|<\infty>|B|:$
+	\begin{enumerate}
+		\item $|A\cup B| = |A| + |B| + |A\cap B|$.
+		\item $B\subseteq A \implies |B|\leq|A|,\:|A\setminus B| = |A|-|B|$.
+		\item $|A\times B| = |A||B|$.
+		\item Principio de Palomar: $|A|>|B|\implies\nexists\:f:B\to A\:/\:f $ es inyectiva.
+		\end{enumerate}
+\end{obs}
+\begin{obs}
+	Las observaciones $4.1.2$ y $4.2.4$ se pueden generalizar a:
+	\begin{enumerate}
+		\item $|A\cup B \cup C| = |A|+|B|+|C|-|A\cap B| - |A\cap C| - |B\cap C| + |A\cap B\cap C|$ (imposible de generalizar).
+		\item $|\prod_{i=1}^{\scriptscriptstyle |A|}A_i| = \prod_{i=1}^{\scriptscriptstyle |A|}|A_i|$
+	\end{enumerate}
+\end{obs}
+
+\section{Variaciones}
+\begin{definition}
+	$V_{m,n}$: Variación odrinaria sin repetición de $m$ elementos tomados de $n$ en $n$ ($m\geq n$).
+	\[V_{m,n} = \frac{m!}{(m-n)!} = \prod_{i=0}^{n+1}(m-i)\]:
+	\begin{itemize}
+		\item No entran todos los elementos.
+		\item Importa el orden.
+		\item No se repiten los elementos.
+	\end{itemize}
+\end{definition}
+\begin{definition}
+	$VR_{m,n}$: Variación ordinaria con repetición de m elementos tomados de n en n.
+	\[VR_{m,n} = m^n\]
+\begin{itemize}
+	\item Pueden entrar todos los elementos si $m\leq n$.
+	\item Importa el orden.
+	\item Se repiten los elementos.
+	\end{itemize}
+\end{definition}
+
+\section{Permutaciones}
+\begin{definition}
+Las permutaciones son un caso particular de variaciones donde $m=n$.
+\end{definition}
+\begin{definition}
+$P_n$: Permutación de $n$ elementos.
+\[P_n = n!\]
+\begin{itemize}
+	\item Entran todos los elementos.
+	\item Importa el orden.
+	\item No se repiten los elementos.
+	\end{itemize}
+\end{definition}
+\begin{definition}
+	$PC_n$: Permutación circular. Los elementos se repetirán de forma cílcica, por lo cual, por ejemplo, la ordenación $1234$ sería equivalente a $3412$.
+	\[P_n = n!\]
+\end{definition}
+\begin{definition}
+	$PR_n^{n_1,n_2,\dots,n_s}$: Permutaciones con repeticiones de $n$ elementos, donde hay $s$ elementos que se repiten con $n_i>1\:\forall\:i$.
+	\[PR_n^{n_1,n_2,\dots,n_s}=\frac{n!}{\prod_{i=1}^s n_i!}\]
+\end{definition}
+
+
+
+
+
+
+
+
 
 
 
