@@ -164,7 +164,7 @@ Además:
 \section{Variaciones}
 \begin{definition}
 	$V_{m,n}$: Variación odrinaria sin repetición de $m$ elementos tomados de $n$ en $n$ ($m\geq n$).
-	\[V_{m,n} = \frac{m!}{(m-n)!} = \prod_{i=0}^{n+1}(m-i)\]:
+	\[V_{m,n} = \frac{m!}{(m-n)!} = \prod_{i=0}^{n+1}(m-i)\]
 	\begin{itemize}
 		\item No entran todos los elementos.
 		\item Importa el orden.
@@ -196,16 +196,33 @@ $P_n$: Permutación de $n$ elementos.
 \end{definition}
 \begin{definition}
 	$PC_n$: Permutación circular. Los elementos se repetirán de forma cílcica, por lo cual, por ejemplo, la ordenación $1234$ sería equivalente a $3412$.
-	\[P_n = n!\]
+	\[PC_n = (n-1)!\]
 \end{definition}
 \begin{definition}
 	$PR_n^{n_1,n_2,\dots,n_s}$: Permutaciones con repeticiones de $n$ elementos, donde hay $s$ elementos que se repiten con $n_i>1\:\forall\:i$.
 	\[PR_n^{n_1,n_2,\dots,n_s}=\frac{n!}{\prod_{i=1}^s n_i!}\]
 \end{definition}
+\section{Combinaciones}
+\begin{definition}
+Las combinaciones son variaciones donde el orden no importa.
+\end{definition}
+\begin{definition}
+	$C_{m,n}$: Combinación de $m$ elementos tomados de $n$ en $n$ ($m\geq n$).
+	\[C_{m,n} = \arraycolsep=1.4pt\left(\begin{array}{c}
+	m\\n
+\end{array}\right) = \frac{m!}{n!(m-n)!}
+\]
+\begin{itemize}
+	\item No entran todos los elementos.
+	\item No importa el orden.
+	\item No se repiten los elementos.
+\end{itemize}
+\end{definition}
+\begin{definition}
+	$CR_{m,n}$: Combinación con repetición de $m$ elementos tomados de $n$ en $n$ ($m\geq n$).
+	\[CR_{m,n} = \arraycolsep=1.4pt\left(\begin{array}{c}m+n-1\\n\end{array}\right)\]
 
-
-
-
+\end{definition}
 
 
 
