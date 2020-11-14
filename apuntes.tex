@@ -224,10 +224,33 @@ Las combinaciones son variaciones donde el orden no importa.
 
 \end{definition}
 
-
-
-
-
+\part{Teoría de grafos}
+\section{Grafos, digrafos y multigrafos}
+\begin{definition}
+	Un grafo simple se denota como un par $G=(E,V)$ donde $E$ se refiere a las aristas y $V$ a los vértices. Las aristas se definen como:
+	\[E\subseteq\{\{u,v\}: u,v\in V,\: u\neq v\}\]
+\end{definition}
+\begin{definition}
+	Un multigrafo o grafo no dirigido $G=(V,E)$ tiene $E = \{e_i\}_{i\in I}$, que denota una familia, no un conjunto. Además, $e_i = \{u_i,v_i\},\:(u_i, v_i)\in V\times V\:\forall i\in I$. 
+\end{definition}
+\begin{definition}
+	Un digrafo $G=(V,E)$ tiene $E\subseteq \{(a,b)\in V\times V : a\neq b\}$, o sea, las aristas son ordenadas y los pares indican la dirección de estas.
+\end{definition}
+\begin{definition}
+Un multigrafo o grafo dirigido $G=(V,E)$ tiene $E=\{e_i\}_{i\in I}$ donde $e_i\in V\times V$.
+\end{definition}
+\begin{definition}
+$u$ adyacente a $v \iff \{u,v\}\in E$, donde $G=(V,E)$. Entonces, $e=\{u,v\}$ conecta $u$ y $v$ quiere decir que $e$ incidente con $u$ y $v$ y que $u$ y $v$ son los extremos de la arista $e$.
+\end{definition}
+\begin{definition}
+	$gr(u)$ donde $u\in V$ se refiere al número de aristas a las que pertenece $u$. $gr(u) = 0 \longrightarrow u$ es un vértice aislado.
+\end{definition}
+\begin{theorem} Para $G=(V,E)$ no dirigido: 
+	\[\sum_{v\in V}gr(v) = 2|E|\]
+\end{theorem}
+\begin{definition}
+	En un $G=(V,E)$ dirigido, para $(u,v)\in E$: $u$ es el vértice inicial de $(u,v)$ y $v$ el final. Sabiendo esto, se define el grado de entrada $gr^+(u)$ como el número de aristas con vértice final $u$. $gr^-(u)$ será el grado de salida y se referirá al número de aristas con $u$ como vértice inicial.
+\end{definition}
 
 
 
